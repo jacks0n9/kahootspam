@@ -31,7 +31,7 @@ def new_game(i):
     driver.get('https://kahoot.it/')
     driver_count += 1
     try:
-        pinning = driver.find_element_by_xpath('//*[@id="game-input"]')
+        pinning = driver.find_element_by_id("game-input")
         pinning.send_keys(gamepin)
         pinning.send_keys(Keys.ENTER)
         pin_count += 1
